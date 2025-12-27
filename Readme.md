@@ -14,7 +14,7 @@ It demonstrates how tasks can be scheduled and routed between CPUs and GPUs base
 - OS-inspired design    
 
 ## Architecture  
-
+```text
            Task Submission
                   |  
                   v  
@@ -27,7 +27,8 @@ It demonstrates how tasks can be scheduled and routed between CPUs and GPUs base
 +----------------+   +------------------+  
 |  CPU Executor  |   |   GPU Executor   |  
 | (Thread Pool)  |   | (Simulated GPU)  |  
-+----------------+   +------------------+     
++----------------+   +------------------+ 
+```    
 
 ## Scheduling Policy  
 - Each task has a type (CPU or GPU) and an estimated cost  
